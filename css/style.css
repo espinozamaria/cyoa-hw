@@ -1,0 +1,12 @@
+.btn{
+  background-color: skyblue;
+  text-align: center;
+  padding: 50px;
+}
+
+.btn-lg{
+  position: relative;
+}
+h2{
+  text-align: center;
+}
