@@ -3,7 +3,7 @@ var tot = [seoul, shanghai, taiwan, hongkong, chengdu];
 
 $(function(){
   $('.carousel').carousel({
-    interval: 3000,
+    interval: 5000,
     pause: false,
     // wrap:false,
     keyboard: false
