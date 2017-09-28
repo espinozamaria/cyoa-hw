@@ -1,6 +1,20 @@
 var username, choice1, choice2, choice3, choice4, choice5, total, seoul=0, shanghai=0, taiwan=0, hongkong=0, chengdu=0;
 var tot = [seoul, shanghai, taiwan, hongkong, chengdu];
 
+$(function(){
+  $('.carousel').carousel({
+    interval: 3000,
+    pause: false,
+    // wrap:false,
+    keyboard: false
+  });
+});
+
+//Function to be used for displaying a pop-up image!
+$( function() {
+  $( "#dialog" ).dialog();
+} );
+
 function intro(){
     username = prompt("Lets begin! Please enter the username you'd like to use for this game: ");
   alert(username + "," + "welcome aboard on this adventure! We will be traveling the world, lets see where your choices take you!");
@@ -145,9 +159,24 @@ console.log(total);
 if(total == seoul)
 {
   alert("You should go to Seoul! The city of lights and Korean pop idols! You will enjoy delicious spicy food such as Kimchi and Ramen! The night view is stunning, and its night markets are among the best in the world!");
+
+}
+else if(total==chengdu)
+{
+  alert("You should go visit Chengdu, one of the cities that has the most amount of pandas in the world! Not only that, but the traditional food from Chengdu is super spicy! You'll definitely be pleasantly surprised and have a blast there!");
 }
 
-
-
-
+else if(total == hongkong)
+{
+  alert("Hong Kong should be your next destination! Hong Kong has a wonderful night and day view! Night Markets, street food, shopping, a wonderful city with many delightful things to enjoy for everyone! Also house to Jackie Chan!");
+}
+else if(total==shanghai)
+{
+  alert("Home to one of the tallest buildings of the world, and the largest city in China with a population of over 24 million people, Shanghai has stunning night views, traditional and modern architecture, and if you're interested in getting fake name brand products that look authentic, this is the place to go!!! ");
+}
+else if(total==taiwan)
+{
+  alert("A beautiful country of wonderful and peaceful people, Taiwan has absolutely wonderful night markets with street performances and delicious snacks and beverages such as boba! Port cities, hiking, shopping, almost anything is possible at this wonderful city!");
+}
+alert("Hope you enjoyed this game! Continue browsing the photos for your reference!");
 }

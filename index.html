@@ -19,14 +19,67 @@
 <body>
   <div class="jumbotron">
     <h2> Begin your Adventure! </h1>
-    <p class="lead">
+    <!-- <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button" onclick="intro()">Start Here </a>
-  </p>
+  </p> -->
+  <div class="carousel slide" id="featured">
+    <ol class="carousel-indicators">
+      <li data-target="#featured" data-slide-to="1" class="active"></li>
+      <li data-target="#featured" data-slide-to="2"></li>
+      <li data-target="#featured" data-slide-to="3"></li>
+      <li data-target="#featured" data-slide-to="4"></li>
+      <li data-target="#featured" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <!-- Images for the carousel -->
+      <div class="item active">
+        <img class="format" src="images/20160226_202435.jpg" alt="Shanghai Night View of SkyLine on the Bund">
+        <div class="carousel-caption">
+          <p>The Night view of the Bund in Shanghai</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button" onclick="intro()">Start Here </a>
+        </div>
+      </div>
+      <div class="item">
+        <img class="format" src="images/20160510_184403.jpg">
+        <div class="carousel-caption">
+          <p>Night View from Taipei 101 Tower in Taiwan</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button" onclick="intro()">Start Here </a>
+        </div>
+      </div>
+      <div class="item">
+        <img class="format" src="images/20160113_131723.jpg">
+        <div class="carousel-caption">
+          <p>Hong Kong bay with Floating Restaurant</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button" onclick="intro()">Start Here </a>
+        </div>
+      </div>
+      <div class="item">
+        <img class="format" src="images/20160516_111424.jpg">
+        <div class="carousel-caption">
+          <p>Korean palace in Seoul, South Korea</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button" onclick="intro()">Start Here </a>
+        </div>
+      </div>
+      <div class="item">
+        <img class="format" src="images/20170615_101547.jpg">
+        <div class="carousel-caption">
+          <p>Panda at the Chengdu Panda Research Base</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button" onclick="intro()">Start Here </a>
+        </div>
+      </div>
+    </div>  <!-- carousel-inner-->
+    <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
+      <span class="fa fa-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#featured" role="button" data-slide="next">
+      <span class="fa fa-chevron-right"></span>
+    </a>
+  </div>    <!--carousel-->
   </div> <!-- End of Jumbotron div -->
 
 
   <!-- JQuery -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="js/bootstrap.min.js"></script>
   <!-- Attaching the custom js file -->
